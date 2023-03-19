@@ -28,14 +28,14 @@ public class Drawing_toys {
                         String str = getPrize(toys, chance);
                             if (str != null){
                                 listNum.put(num, str);
-                                System.out.println("Вы выйграли игрушку:  " + str);
+                                System.out.println("Вы выиграли игрушку:  " + str);
                                 }
                             else{
-                                System.out.println("Вы ничего не выйграли");
+                                System.out.println("Вы ничего не выиграли");
                                 num = num - 1;
                                 }  
                             if (!listNum.isEmpty()){
-                                System.out.println("Ваш выйгрыш: " + listNum.toString()); 
+                                System.out.println("Ваш выигрыш: " + listNum.toString()); 
                                 }     
                         break;
                     case "2":
@@ -64,7 +64,7 @@ public class Drawing_toys {
                 }
             }
         public static String getString(Scanner scanner) {
-            System.out.println("\n1 - Играть.\n2 - Забрать выйгрыш.\n3 - Закончить игру.");
+            System.out.println("\n1 - Играть.\n2 - Забрать выигрыш.\n3 - Закончить игру.");
             String result = scanner.nextLine();
             return result;   
         }        
@@ -115,7 +115,7 @@ public class Drawing_toys {
 
     public static void addInFile(String args) { 
 
-            String line = "Выйгрыш добавлен в файл";
+            String line = "Выигрыш добавлен в файл";
         try {
             String pathProject = System.getProperty("user.dir");
             String pathFile = pathProject.concat("/toys.txt");
